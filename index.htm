@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="js no-touch cssanimations csstransitions cssfilters cssparallax"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><link type="text/css" rel="stylesheet" href="Petar%20Stojakovic%E2%84%A2%20_%20Designer%20&amp;%20Creative%20Director_files/all.css">
+
+
+	</head>
+
+
+	<body>
+
+	<div class="container">
+		
+		<div id="animated-gradient"></div><div class="layer wave always-visible"></div>
+		<div class="red">
+			<h1>WELCOME</h1>
+		</div>
+						
+		<div id="titles" style="opacity: 0; height: 2px;">
+
+		<svg id="quote-svg">
+		</svg></div>
+		
+		<div class="teal">
+			<h1>WELCOME</h1>
+
+		</div>
+
+						
+				
+	<script type="text/javascript" src="Petar%20Stojakovic%E2%84%A2%20_%20Designer%20&amp;%20Creative%20Director_files/all-min.js"></script>
+			
+	<script type="text/javascript">
+				$(function () {
+					var img = document.getElementById('background-image'),
+						optimize = docCookies.getItem('animation') === 'off';
+
+					Site.init({
+						container: '.scroll-content',
+						header: {
+							slider: '#titles',
+							popup: {
+								parent: 'header'
+							},
+							sliderSettings: {
+								stopOnHover: true,
+								autoPlay: true,
+								responsiveRefreshRate: 100,
+								transitionStyle: 'goDown'
+							}
+						},
+						parallax: (isMobile.any) ? true : optimize,
+						scene: (isMobile.any) ? false : true,
+						smoothWheel: (isMobile.any) ? false : true,
+						gradient: false
+					});
+				});
+			</script>
+		
+
+	</body></html>
